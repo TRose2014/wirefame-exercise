@@ -1,0 +1,74 @@
+body{
+    background-color: cornflowerblue;
+}
+
+section{
+    padding: 30%;
+    margin-right: 10%;
+}
+#content{
+    margin-top: 1%;
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    ". main main main"
+    "footer footer footer footer";
+
+}
+#one{
+    background-color: rosybrown;
+    padding: 2%;
+    width: 90%;
+    margin-left: 3%;
+}
+
+#two{
+    background-color: darkcyan;
+    grid-area: header;
+    padding: 8%;
+    width: 40%;
+    margin-left: 20%;
+}
+
+#three{
+    background-color: blanchedalmond;
+    /* grid-area: main; */
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    margin-top: 1%
+}
+#four{
+    background-color: darkred;
+}
+
+#five{
+    background-color: goldenrod
+}
+
+#text{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 1%;
+}
+
+#six{
+    background-color: indianred;
+    padding: 20%;
+}
+
+#seven{
+    background-color: lawngreen;
+    padding: 20%;
+}
+
+#eight{
+    background-color: olivedrab;
+    grid-area: footer;
+    margin-top: 1%;
+    padding: 5%;
+}
