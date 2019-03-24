@@ -2,73 +2,93 @@ body{
     background-color: cornflowerblue;
 }
 
-section{
-    padding: 30%;
-    margin-right: 10%;
-}
 #content{
-    margin-top: 1%;
     display:grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header header"
-    ". main main main"
-    "footer footer footer footer";
+    grid-template-columns: repeat(3, 33%);
+    background-color: green;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
 
 }
+
+#placeholderHeader{
+    margin-left: 7%;
+    margin-top: 1%;
+}
+
+#one ul{
+    display: inline;
+    position: absolute;
+    padding-top: 2%;
+}
+
+#one li{
+    display: inline;
+    margin-left: 14%;
+}
+
 #one{
     background-color: rosybrown;
-    padding: 2%;
+    grid-column: 1/4;
+    height: 100px;
     width: 90%;
     margin-left: 3%;
 }
 
 #two{
     background-color: darkcyan;
-    grid-area: header;
-    padding: 8%;
-    width: 40%;
-    margin-left: 20%;
+    grid-column: 1/4;
+    width: 80%;
+    margin-left: 6%;
 }
 
+#placeholderOne{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 #three{
     background-color: blanchedalmond;
-    /* grid-area: main; */
+    width: 300px;
+    margin-left: 20%;
+    grid-column: 1;
 }
 
-#grid{
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-    margin-top: 1%
-}
 #four{
     background-color: darkred;
+    width: 300px !important;
+    grid-column: 2;
 }
 
 #five{
-    background-color: goldenrod
-}
-
-#text{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-top: 1%;
+    background-color: goldenrod;
+    margin-left: -20%;
+    grid-column: 3;
+    width: 300px;
 }
 
 #six{
     background-color: indianred;
-    padding: 20%;
+    grid-column: 1;
+    margin-left: 10%;
 }
 
 #seven{
     background-color: lawngreen;
-    padding: 20%;
+    grid-column: 2;
+    width: 480px;
+    margin-left: 50%;
+}
+#seven p{
+    overflow: scroll;
+    height: 400px !important;
 }
 
 #eight{
     background-color: olivedrab;
-    grid-area: footer;
-    margin-top: 1%;
-    padding: 5%;
+    grid-column: 1/4;
+    height: 100px;
+    width: 90%;
+    margin-left: 4%;
 }
